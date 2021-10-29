@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: url('images/pattern-background-desktop.svg'), hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 350px;
+    border-radius: 20px;
+    margin: 50px 0;
+    background-color: #fff;
+}
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.date img{
+    margin-right: 5px;
+}
+.order-details {
+    padding: 15px 25px;
+}
+
+.title {
+    font-size: 16px;
+}
+
+.hero-img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cta-change {
+    font-size: 15px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.cta-change:hover {
+    color: hsl(224, 23%, 55%);
+}
+
+.cta {
+    display: block;
+    margin: 25px auto;
+    padding: 15px 45px;
+    background-color: hsl(245, 75%, 52%);
+    border: 1px solid transparent;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
+
+.cta:hover {
+    background-color: hsl(224, 23%, 55%);
+}
+
+.date h3 {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.cta-cancel {
+    font-size: 14px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    text-decoration: none;
+    margin: 0 0 15px;
+    display: block;
+}
+
+.cta-cancel:hover {
+    color: hsl(224, 23%, 55%);
+}
+
+@media (max-width: 690px) {
+    body {
+        background: url('images/pattern-background-mobile.svg'), hsl(225, 100%, 94%);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
